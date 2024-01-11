@@ -5,8 +5,8 @@ services:
       context: .
       dockerfile: ./src/AzureAppConfigurationEmulator/Dockerfile
     ports:
-      - 8080:8080
-      - 8081:8081
+      - 18080:8080
+      - 18081:8081
     volumes:
       - data:/var/lib/azureappconfigurationemulator
       - data-protection-keys:/root/.aspnet/DataProtection-Keys
