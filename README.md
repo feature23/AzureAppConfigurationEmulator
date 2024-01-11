@@ -1,8 +1,11 @@
-# Emulator for Azure App Configuration
+# Azure App Configuration Emulator
 
-Please note that Emulator for Azure App Configuration is unofficial and not endorsed by Microsoft.
+Please note that this project is unofficial and not endorsed by Microsoft.
+It is not intended for production use.
 
 ## Getting Started
+
+Clone the repo and run from the root of the project:
 
 ```shell
 docker-compose up -d
@@ -10,10 +13,14 @@ docker-compose up -d
 
 (Leave off the `-d` to run in your current terminal instead of in background/detached mode.)
 
+Use the following connection string to connect to the emulator:
+
+`Endpoint=http://localhost:18080;Id=abcd;Secret=c2VjcmV0`
+
 ### Local development
 
 1. Run `./keygen.sh` to generate the HTTPS keypair (Linux/macOS/WSL; Windows instructions TODO)
-2. Run `dotnet run` from the `src/AzureAppConfigurationEmulator` folder, or start the app from your IDE
+2. Run `dotnet run` from the `src/AzureAppConfigurationEmulator` folder, or start the app from your IDE, adjusting the port in the connection string
 
 ## Authentication
 
