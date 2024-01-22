@@ -8,7 +8,7 @@ It is not intended for production use.
 Clone the repo and run from the root of the project:
 
 ```shell
-docker-compose up -d
+docker compose up -d
 ```
 
 (Leave off the `-d` to run in your current terminal instead of in background/detached mode.)
