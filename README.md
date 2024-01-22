@@ -5,7 +5,7 @@ Please note that Emulator for Azure App Configuration is unofficial and not endo
 ## Getting Started
 
 ```shell
-docker-compose up -d
+docker compose up -d
 ```
 
 (Leave off the `-d` to run in your current terminal instead of in background/detached mode.)

@@ -17,6 +17,7 @@ services:
       - DATABASE_PATH=/var/lib/azureappconfigurationemulator/emulator.db
       - SSL_CERTIFICATE_KEY_PATH=/var/lib/azureappconfigurationemulator/emulator.key
       - SSL_CERTIFICATE_CERT_PATH=/var/lib/azureappconfigurationemulator/emulator.crt
+    restart: unless-stopped
 volumes:
   data:
   data-protection-keys:
